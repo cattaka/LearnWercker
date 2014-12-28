@@ -10,6 +10,7 @@ build:
           echo $ANDROID_BUILD_TOOLS
           echo $ANDROID_UPDATE_FILTER
           cat /proc/cpuinfo
+          kvm-ok
     - android-sdk-update:
         filter: sysimg-21
 #    - setup-android-emulator:
