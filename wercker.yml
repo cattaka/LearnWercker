@@ -15,6 +15,7 @@ build:
         filter: sysimg-21
     - setup-android-emulator:
         target: android-21
+        abi: x86
     - script:
         name: run gradle connectedAndroidTestDebug
         code: |
