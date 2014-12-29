@@ -1,4 +1,4 @@
-box: cattaka/android-x86@1.0.8-r1
+box: sugoi-wada/android@1.0.7-r8
 build:
   steps:
     - script:
@@ -15,7 +15,6 @@ build:
         filter: sysimg-21
     - setup-android-emulator:
         target: android-21
-        abi: x86
     - script:
         name: run gradle connectedAndroidTestDebug
         code: |
@@ -33,4 +32,3 @@ build:
           pwd
           ls -la ./app/build/outputs/
           cp -r ./app/build/outputs/* $WERCKER_REPORT_ARTIFACTS_DIR
-
